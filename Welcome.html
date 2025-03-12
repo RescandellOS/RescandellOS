@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Rescandell 1.1</title>
+    <style>
+        body {
+            background: linear-gradient(135deg, #0b3d91, #44a872);
+            background-size: 300% 300%;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+            color: white;
+            animation: fadeIn 1.5s ease-in-out, bgMove 8s infinite alternate;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        @keyframes bgMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        h1 {
+            background-color: rgba(0, 0, 255, 0.8);
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 5px;
+            animation: slideIn 1s ease-in-out, scaleUp 1.5s ease-in-out;
+        }
+
+        @keyframes slideIn {
+            from { transform: translateY(-50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        @keyframes scaleUp {
+            0% { transform: scale(0.8); }
+            100% { transform: scale(1); }
+        }
+
+        h2 a {
+            color: white;
+            text-decoration: none;
+            background-color: darkblue;
+            padding: 10px 15px;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 5px;
+            transition: all 0.3s ease-in-out;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h2 a:hover {
+            background-color: navy;
+            box-shadow: 0 0 10px white;
+            transform: scale(1.1);
+        }
+
+        h2 a:active {
+            transform: scale(0.9);
+            background-color: #003366;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0;
+            animation: fadeIn 1.5s ease-in-out forwards;
+        }
+
+        .images img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+            opacity: 0;
+            transform: scale(0.8);
+            animation: fadeInScale 1.5s ease-in-out forwards;
+        }
+
+        .images img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+        }
+
+        @keyframes fadeInScale {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #008CBA;
+            color: white;
+            padding: 12px 20px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            margin: 10px;
+        }
+
+        .button:hover {
+            background-color: #005f7f;
+            transform: scale(1.1);
+            box-shadow: 0 0 10px white;
+        }
+
+        .button:active {
+            transform: scale(0.9);
+            background-color: #004060;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Welcome to Rescandell 1.1</h1>
+
+        <h2><a href="https://youtube.com/@syncasic?si=xWOCipcMx3gIphN8" target="_blank">Syncasic (Not My Channel)</a></h2>
+        <h2><a href="https://telegram.org/dl" target="_blank">My Telegram Account</a></h2>
+
+        <h1>What is in this OS?</h1>
+        <p>Games, Music, Console, Shutdown</p>
+
+    
+
+        <div class="images">
+            <img src="1.jpg" alt="Image 1">
+            <img src="2.jpg" alt="Image 2">
+            <img src="3.jpg" alt="Image 3">
+            <img src="4.jpg" alt="Image 4">
+            <img src="5.jpg" alt="Image 5">
+            <img src="6.jpg" alt="Image 6">
+            <img src="7.jpg" alt="Image 7">
+        </div>
+    </div>
+
+</body>
+</html>
